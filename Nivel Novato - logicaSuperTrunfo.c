@@ -40,10 +40,12 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
+// Declaração de variáveis da Carta 1
 char estado[20], codigoCarta[4], nomeCidade[50];
 int populacao, pontosTuristicos;
 float area, PIB, densidade, PPC;
 
+// Declaração de variáveis da Carta 2
 char estado2[20], codigoCarta2[4], nomeCidade2[50];
 int populacao2, pontosTuristicos2;
 float area2, PIB2, densidade2, PPC2;
@@ -51,11 +53,10 @@ float area2, PIB2, densidade2, PPC2;
 
 printf("****Carta 1****\n\n");
 
-getchar();
 
 printf("Digite o seu estado:\n");
 fgets(estado, sizeof(estado), stdin); //tava testando a função de colocar varias palavras em uma linha e elas serem lidas.
-//estado[strcspn(estado, "\n")] = '\0'; 
+//estado[strcspn(estado, "\n")] = '\0';  // Remover \n se necessário
 
 printf("Digite o nome da sua Cidade:\n");
 fgets(nomeCidade, sizeof(nomeCidade), stdin);
@@ -63,46 +64,54 @@ fgets(nomeCidade, sizeof(nomeCidade), stdin);
 
 printf("Digite o codigo da sua carta:\n");
 scanf(" %s", codigoCarta);
+getchar(); // limpa o Enter
 
 printf("Digite a quantidade da populacao:\n");
 scanf(" %d", &populacao);
+getchar(); // limpa o Enter
 
 printf("Digite a area:\n");
 scanf(" %f", &area);
+getchar(); // limpa o Enter
 
 printf("Digite a quantidade de pontos turisticos:\n");
 scanf(" %d", &pontosTuristicos);
+getchar(); // limpa o Enter
 
-printf("Digite o Pib da sua cidade:\n\n");
+printf("Digite o Pib da sua cidade:\n");
 scanf(" %f", &PIB);
-
+getchar(); // limpa o Enter
 
 printf("****Carta 2****\n\n");
 
-getchar();
 
 printf("Digite o seu estado:\n");
 fgets(estado2, sizeof(estado2), stdin);
-//estado2[strcspn(estado2, "\n")] = '\0';
+//estado2[strcspn(estado2, "\n")] = '\0';// Remover \n se necessário
 
 printf("Digite o nome da sua Cidade:\n");
-fgets(nomeCidade2, sizeof(nomeCidade2), stdin);
+fgets(nomeCidade2, sizeof(nomeCidade2), stdin); 
 //nomeCidade2[strcspn(nomeCidade2, "\n")] = '\0';
 
 printf("Digite o codigo da sua carta:\n");
 scanf(" %s", codigoCarta2);
+getchar(); // limpa o Enter
 
 printf("Digite a quantidade da populacao:\n");
 scanf(" %d", &populacao2);
+getchar(); // limpa o Enter
 
 printf("Digite a area:\n");
 scanf(" %f", &area2);
+getchar(); // limpa o Enter
 
 printf("Digite a quantidade de pontos turisticos:\n");
 scanf(" %d", &pontosTuristicos2);
+getchar(); // limpa o Enter
 
-printf("Digite o Pib da sua cidade:\n\n");
+printf("Digite o Pib da sua cidade:\n");
 scanf(" %f", &PIB2);
+getchar(); // limpa o Enter
 
 densidade = populacao / area;
 densidade2 = populacao2 / area2;
@@ -159,6 +168,7 @@ else {
 */
 
 // DENSIDADE POPULACIONAL 
+// Comparação das cartas baseada na densidade populacional
 
 if(densidade < densidade2){
     printf("Carta 1 - %s a densidade eh de: %f \n Carta 2 - %s, a densidade eh: %f \n Resultado: Carta 1 venceu (%s)\n", nomeCidade, densidade, nomeCidade2, densidade2, nomeCidade);
@@ -196,5 +206,8 @@ else {
     printf("Empate\n");
 }
 */
+
+//Fiz o teste de comparação com todos os atributos porem manti para uso no programa só o da comparação da densidade
+
     return 0;
 }

@@ -23,6 +23,34 @@ No nível Novato, você começará implementando a lógica básica de comparaç�
 - O resultado da comparação será mostrado, indicando a carta vencedora.
 
 ---
+*****Funcionalidades
+
+ Cadastro de duas cartas com as seguintes informações:
+  Estado
+  Nome da cidade
+  Código da carta
+  População
+  Área
+  Pontos turísticos
+  PIB
+Cálculo de densidade populacional e PIB per capita.
+Comparação das cartas baseado na **densidade populacional**.
+Resultado exibido indicando a carta vencedora ou empate.
+
+*****Como Usar
+
+Insira os dados da Carta 1 (estado, cidade, código, população, área, pontos turísticos e PIB).
+
+Insira os dados da Carta 2.
+
+O programa calculará a densidade populacional e exibirá o resultado final, indicando qual carta venceu.
+
+*****Observações
+
+Este código é referente ao nível Novato do desafio.
+
+Apenas um atributo (densidade populacional) é utilizado para comparação.
+
 
 ## 🏅 Nível Aventureiro
 
@@ -38,6 +66,68 @@ No nível Aventureiro, você expandirá o sistema para incluir a comparação an
 - **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
 
 ---
+*****Como Usar
+
+O programa pedirá os dados da Carta 1:
+
+Nome do país
+
+Área
+
+População
+
+Pontos turísticos
+
+PIB
+
+Em seguida, pedirá os dados da Carta 2 com os mesmos atributos.
+
+Depois, você escolherá qual atributo será usado para comparar as cartas:
+
+1. População
+2. Pontos Turísticos
+3. Área
+4. PIB
+5. Densidade
+
+
+O programa exibirá:
+
+Nomes dos países
+
+Atributo usado na comparação
+
+Valores do atributo para cada carta
+
+Qual carta venceu ou se houve empate
+
+*****Exemplo de Uso
+Digite o nome do País (Carta 1): Brasil
+Digite a área: 8516.0
+Digite a população: 211000000
+Digite pontos turísticos: 10
+Digite o PIB: 1800.0
+
+Digite o nome do País (Carta 2): Argentina
+Digite a área: 2780.0
+Digite a população: 45000000
+Digite pontos turísticos: 8
+Digite o PIB: 500.0
+
+Escolha o atributo para comparação: 1
+Resultado:
+País 1: Brasil | País 2: Argentina
+Atributo: População
+População carta 1: 211000000 | População carta 2: 45000000
+Resultado: Carta 1 venceu!
+
+*****Observações
+
+Para densidade populacional, vence o país com menor densidade.
+
+O programa trata entradas inválidas com mensagem de "Opção inválida!".
+
+Todas as comparações seguem a regra: maior valor vence, exceto densidade.
 
 ## 🏅 Nível Mestre
 
