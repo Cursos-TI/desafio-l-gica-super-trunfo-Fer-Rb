@@ -317,6 +317,10 @@ int main() {
     printf("Soma Carta 1: %f\n",soma);
     printf("Soma Carta 2: %f\n", soma2);
 
+    //Essa é a parte final do código onde vai exibir todos as informações solicitadas
+    //Fiz de uma maneira repetitiva, para treinar a escrita mas também achei mais fácil com o que eu sei até agora 
+
+
     printf("*****RESULTADO FINAL*****\n\n");
     if (soma > soma2){
         printf("Nome do País vencedor: %s\n", nome_pais);

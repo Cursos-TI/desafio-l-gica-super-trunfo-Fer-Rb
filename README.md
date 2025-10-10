@@ -162,3 +162,64 @@ No nível Mestre, o desafio se intensifica com a adição de funcionalidades ava
 Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
 
 Equipe de Ensino - MateCheck
+
+
+Objetivo do Projeto
+
+Criar um sistema que permita:
+Cadastrar duas cartas com informações de países.
+Escolher dois atributos para comparar.
+Calcular e exibir o resultado final com clareza, mostrando:
+Nome dos países
+Atributos usados
+Valores comparados
+Soma total de cada carta
+Qual carta venceu
+
+Opções que iram aparecer no compilador
+
+Digite as informações da Carta 1:
+Nome do país
+Área
+População
+Pontos turísticos
+PIB 
+
+Digite as informações da Carta 2 com os mesmos dados.
+
+O programa calcula automaticamente a densidade populacional de ambos os países.
+
+Em seguida, escolha dois atributos diferentes para comparar:
+
+1. População
+2. Pontos Turísticos
+3. Área
+4. PIB
+5. Densidade
+
+O resultado exibirá:
+
+Os nomes dos países 
+Os dois atributos escolhidos
+Os valores comparados
+A soma final de cada carta
+E o vencedor 🎉
+
+Exemplo de saída 
+
+*****RESULTADO FINAL*****
+
+Nome do País vencedor: Brasil
+População: Brasil = 211000000 | Argentina = 45000000
+PIB: Brasil = 1800.00 | Argentina = 500.00
+Soma: Carta 1 = 212800000.00 | Carta 2 = 45450000.00
+
+🏆 Brasil venceu
+PARABÉNS🎉🎉🎉🎉🎉
+
+Observações Importantes
+
+O programa impede que o usuário escolha o mesmo atributo duas vezes.
+Todos os cálculos de soma e comparação são feitos automaticamente.
+Mensagens com emojis deixam o resultado mais amigável 🌟
+O código tem alguns comentários para facilitar a compreensão.
